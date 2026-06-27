@@ -3,7 +3,7 @@ import { Skeleton } from "../skeleton/Skeleton";
 interface Props {
     question: string;
     answer: string | null;
-    isLoading: boolean;
+    isLoading?: boolean;
 }
 
 export const ChatWindow = ({question, answer, isLoading}: Props) => (
