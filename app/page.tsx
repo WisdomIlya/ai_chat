@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Skeleton, ChatWindow } from '../src/components/index';
 
 export default function Home() {
   return (
