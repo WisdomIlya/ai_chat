@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
         const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
             method: 'POST',
             headers: {
-                Authorization: 'Bearer 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',
+                Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
                 'HTTP-Referer': 'http://localhost:3000',
                 'X-Title': 'ai_chat',
                 'Content-Type': 'application/json',
